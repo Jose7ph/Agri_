@@ -1,0 +1,196 @@
+<?xml version="1.0" ?>
+<resources>
+    <string-array name="login_type">
+        <item>手机</item>
+        <item>邮箱</item>
+    </string-array>
+    <string-array name="job_parameter_spray_mode">
+        <item>固定</item>
+        <item>随速</item>
+    </string-array>
+    <string-array name="air_route_parameter_type">
+        <item>不扫边</item>
+        <item>扫边</item>
+        <item>仅扫边</item>
+    </string-array>
+    <string-array name="air_route_parameter_land_consolidation">
+        <item>整体</item>
+        <item>单边</item>
+    </string-array>
+    <string-array name="advanced_setting_model_type_titles">
+        <item>四轴X字</item>
+        <item>四轴十字</item>
+        <item>六轴X字</item>
+        <item>六轴十字</item>
+        <item>八轴X字</item>
+        <item>八轴十字</item>
+        <item>三轴六桨1</item>
+        <item>三轴六桨2</item>
+        <item>四轴八桨M</item>
+        <item>四轴八桨</item>
+        <item>四轴六桨</item>
+        <item>四轴八桨加长</item>
+        <item>六轴X字加长</item>
+        <item>六轴T型</item>
+        <item>六轴八桨</item>
+    </string-array>
+    <string-array name="motor_idle">
+        <item>低速</item>
+        <item>慢速</item>
+        <item>中速</item>
+        <item>快速</item>
+        <item>高速</item>
+    </string-array>
+    <string-array name="flight_control_installation_method">
+        <item>水平向前</item>
+        <item>水平向右</item>
+        <item>水平向后</item>
+        <item>水平向左</item>
+        <item>向上</item>
+        <item>向后</item>
+    </string-array>
+    <string-array name="rtk_installation_method">
+        <item>前-后</item>
+        <item>左-右</item>
+        <item>左-下</item>
+        <item>右-下</item>
+    </string-array>
+    <string-array name="gps_a_or_b">
+        <item>GNSS-A</item>
+        <item>GNSS-B</item>
+    </string-array>
+    <string-array name="position_system_type">
+        <item>单GPS</item>
+        <item>双GPS</item>
+        <item>RTK+GPS</item>
+    </string-array>
+    <string-array name="battery_type">
+        <item>普通电池</item>
+        <item>单智能电池</item>
+        <item>双智能电池</item>
+    </string-array>
+    <string-array name="filter_type_name">
+        <item>全部</item>
+        <item>进行中</item>
+        <item>已完成</item>
+    </string-array>
+    <string-array name="mine_menu">
+        <item>架次管理</item>
+        <item>地块管理</item>
+        <item>我的设备</item>
+        <item>日志管理</item>
+        <item>通用设置</item>
+        <item>账户与安全</item>
+    </string-array>
+    <string-array name="general_settings_map_type">
+        <item>Mapbox</item>
+        <item>Naver</item>
+        <item>Google</item>
+        <item>自定义</item>
+    </string-array>
+    <string-array name="mine_log_management_type">
+        <item>APP日志</item>
+        <item>崩溃日志</item>
+        <item>飞控日志</item>
+    </string-array>
+    <string-array name="seed_mode">
+        <item>双喷头</item>
+        <item>四喷头</item>
+    </string-array>
+    <string-array name="seed_mode_four_switch">
+        <item>自动双开(随作业方向)</item>
+        <item>全开</item>
+    </string-array>
+    <string-array name="rtk_signal_source">
+        <item>NTRIP</item>
+        <item>USB</item>
+    </string-array>
+    <string-array name="rt_param_names">
+        <item>航向角</item>
+        <item>横滚角</item>
+        <item>俯仰角</item>
+        <item>高度</item>
+        <item>垂直速度</item>
+        <item>水平速度</item>
+        <item>海拔</item>
+        <item>目标距离</item>
+        <item>离家距离</item>
+        <item>电压</item>
+        <item>容量</item>
+        <item>锁定状态</item>
+        <item>目标航点</item>
+        <item>星数</item>
+        <item>飞行模式</item>
+        <item>返航原因</item>
+        <item>悬停原因</item>
+        <item>报警原因</item>
+        <item>雷达状态</item>
+        <item>流速</item>
+        <item>AB点状态</item>
+        <item>飞行时间</item>
+        <item>温度</item>
+        <item>GPS状态</item>
+        <item>空中标志</item>
+        <item>执行状态</item>
+        <item>作业亩数</item>
+        <item>已喷药量</item>
+        <item>前避障状态</item>
+        <item>前障碍距离</item>
+        <item>后避障状态</item>
+        <item>后障碍距离</item>
+        <item>断药标记</item>
+        <item>报警标志</item>
+        <item>锁定原因</item>
+        <item>水泵开关</item>
+        <item>水泵值</item>
+        <item>手动状态</item>
+        <item>液位</item>
+    </string-array>
+    <string-array name="device_details_warn_types">
+        <item>全部</item>
+        <item>严重警告</item>
+        <item>警告</item>
+    </string-array>
+    <string-array name="radar_status">
+        <item>N/A</item>
+        <item>禁用</item>
+        <item>启用</item>
+        <item>有障碍物</item>
+        <item>报警</item>
+    </string-array>
+    <string-array name="work_type">
+        <item>大田作业</item>
+        <item>AB作业</item>
+        <item>手动作业</item>
+        <item>吊运作业</item>
+        <item>清洗作业</item>
+        <item>自由航线</item>
+    </string-array>
+    <string-array name="work_machine_type">
+        <item>喷洒</item>
+        <item>播撒</item>
+        <item>清洗机</item>
+    </string-array>
+    <string-array name="engine_type">
+        <item>瑞深</item>
+        <item>奥安</item>
+        <item>通用</item>
+        <item>轩孚</item>
+    </string-array>
+    <string-array name="engine_running_state">
+        <item>停止</item>
+        <item>等待</item>
+        <item>运行</item>
+        <item>锁机</item>
+        <item>初始化</item>
+    </string-array>
+    <string-array name="device_engine_unlock_status">
+        <item>锁定</item>
+        <item>解锁</item>
+    </string-array>
+    <string-array name="lock_name">
+        <item>解锁</item>
+        <item>锁定</item>
+        <item>APP锁定</item>
+    </string-array>
+</resources>

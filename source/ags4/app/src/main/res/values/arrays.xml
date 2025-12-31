@@ -1,0 +1,196 @@
+<?xml version="1.0" ?>
+<resources>
+    <string-array name="login_type">
+        <item>Mobile Phone</item>
+        <item>Email</item>
+    </string-array>
+    <string-array name="job_parameter_spray_mode">
+        <item>Fixed</item>
+        <item>Dynamic</item>
+    </string-array>
+    <string-array name="air_route_parameter_type">
+        <item>Not</item>
+        <item>Only</item>
+        <item>Sweep</item>
+    </string-array>
+    <string-array name="air_route_parameter_land_consolidation">
+        <item>All</item>
+        <item>Single</item>
+    </string-array>
+    <string-array name="advanced_setting_model_type_titles">
+        <item>Quad X</item>
+        <item>Quad Cross</item>
+        <item>Hexa X</item>
+        <item>Hexa Cross</item>
+        <item>Octa X</item>
+        <item>Octa Cross</item>
+        <item>Y6</item>
+        <item>Y6-</item>
+        <item>Octa 4Cox M</item>
+        <item>Octa 4Cox</item>
+        <item>Hexa 4Ext</item>
+        <item>Octa I4L</item>
+        <item>Hexa XL</item>
+        <item>Hexa T</item>
+        <item>Octa 6Ext</item>
+    </string-array>
+    <string-array name="motor_idle">
+        <item>Slowest</item>
+        <item>Slower</item>
+        <item>Medium</item>
+        <item>Faster</item>
+        <item>Fastest</item>
+    </string-array>
+    <string-array name="flight_control_installation_method">
+        <item>Horizontal Forward</item>
+        <item>Horizontal Right</item>
+        <item>Horizontal Backward</item>
+        <item>Horizontal Left</item>
+        <item>Up</item>
+        <item>Backward</item>
+    </string-array>
+    <string-array name="rtk_installation_method">
+        <item>Front-End</item>
+        <item>Left-Right</item>
+        <item>Left-Bottom</item>
+        <item>Right-Bottom</item>
+    </string-array>
+    <string-array name="gps_a_or_b">
+        <item>GNSS-A</item>
+        <item>GNSS-B</item>
+    </string-array>
+    <string-array name="position_system_type">
+        <item>Single GPS</item>
+        <item>Dual GPS</item>
+        <item>RTK+GPS</item>
+    </string-array>
+    <string-array name="battery_type">
+        <item>Ordinary Battery</item>
+        <item>Single Smart Battery</item>
+        <item>Dual Smart Battery</item>
+    </string-array>
+    <string-array name="filter_type_name">
+        <item>ALL</item>
+        <item>Undone</item>
+        <item>Done</item>
+    </string-array>
+    <string-array name="mine_menu">
+        <item>History Task</item>
+        <item>Planned Field</item>
+        <item>Mine Device</item>
+        <item>Log Management</item>
+        <item>Common Setting</item>
+        <item>Account and Security</item>
+    </string-array>
+    <string-array name="general_settings_map_type">
+        <item>Mapbox</item>
+        <item>Naver</item>
+        <item>Google</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="mine_log_management_type">
+        <item>APP Log</item>
+        <item>Crash Log</item>
+        <item>FMU Log</item>
+    </string-array>
+    <string-array name="seed_mode">
+        <item>Two Nozzles</item>
+        <item>Four Nozzle</item>
+    </string-array>
+    <string-array name="seed_mode_four_switch">
+        <item>Two</item>
+        <item>Four</item>
+    </string-array>
+    <string-array name="rtk_signal_source">
+        <item>NTRIP</item>
+        <item>USB</item>
+    </string-array>
+    <string-array name="rt_param_names">
+        <item>Yaw</item>
+        <item>Roll</item>
+        <item>Pitch</item>
+        <item>Height</item>
+        <item>V-Speed</item>
+        <item>H-Speed</item>
+        <item>Alt.</item>
+        <item>Dist.Target</item>
+        <item>Dist.Home</item>
+        <item>Voltage</item>
+        <item>Cap.</item>
+        <item>Lock</item>
+        <item>WP.Target</item>
+        <item>Svs.#</item>
+        <item>F. Mode</item>
+        <item>Rsn.Home</item>
+        <item>Rsn.Hover</item>
+        <item>Rsn.Alarm</item>
+        <item>Radar Stat.</item>
+        <item>Flow</item>
+        <item>AB Stat.</item>
+        <item>Fly Time</item>
+        <item>Temp.</item>
+        <item>GPS Stat.</item>
+        <item>On Air</item>
+        <item>Exec.Stat.</item>
+        <item>Total Area</item>
+        <item>Prj.Pesti.</item>
+        <item>F.Stat.</item>
+        <item>F.Dist.</item>
+        <item>B.Stat.</item>
+        <item>B.Dist.</item>
+        <item>No Pesti.</item>
+        <item>Warn.</item>
+        <item>Rsn.Lock</item>
+        <item>Pump Switch</item>
+        <item>Pump Val.</item>
+        <item>Manual</item>
+        <item>Water Lv</item>
+    </string-array>
+    <string-array name="device_details_warn_types">
+        <item>ALL</item>
+        <item>Error</item>
+        <item>Alarm</item>
+    </string-array>
+    <string-array name="radar_status">
+        <item>N/A</item>
+        <item>Disabled</item>
+        <item>Enabled</item>
+        <item>Obstacle</item>
+        <item>Alert</item>
+    </string-array>
+    <string-array name="work_type">
+        <item>Large Field</item>
+        <item>AB Route</item>
+        <item>Manual</item>
+        <item>Lifting</item>
+        <item>Cleaning</item>
+        <item>Free Air Route</item>
+    </string-array>
+    <string-array name="work_machine_type">
+        <item>Spraying</item>
+        <item>Spreader</item>
+        <item>Cleaning machine</item>
+    </string-array>
+    <string-array name="engine_type">
+        <item>richenpower</item>
+        <item>AOAN</item>
+        <item>GM</item>
+        <item>XUANFU</item>
+    </string-array>
+    <string-array name="engine_running_state">
+        <item>Stop</item>
+        <item>Waiting</item>
+        <item>Running</item>
+        <item>Lock</item>
+        <item>Initializing</item>
+    </string-array>
+    <string-array name="device_engine_unlock_status">
+        <item>Lock</item>
+        <item>Unlock</item>
+    </string-array>
+    <string-array name="lock_name">
+        <item>Unlock</item>
+        <item>Lock</item>
+        <item>App-Lock</item>
+    </string-array>
+</resources>

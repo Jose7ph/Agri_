@@ -1,0 +1,32 @@
+package com.jiagu.jgcompose.theme
+
+import androidx.compose.ui.graphics.Color
+
+var primary = Color(0xFF07913A) // Color(0xFF0069ED)
+val onPrimary = Color(0xFFFFFFFF)
+val secondary = Color(0xFF008810) // Color(0xFF5DE152)
+val onSecondary = Color(0xFFFFFFFF)
+val tertiary = Color(0xFFF49D15) // Color(0xFFFFBA65)
+val onTertiary = Color(0xFFFFFFFF)
+val error = Color(0xFFE12C2C) // Color(0xFFFFB4AC)
+val onError = Color(0xFFFFFFFF)
+val background = Color(0xFFFAF8FF)
+val onBackground = Color(0xFF181B24)
+val surface = Color(0xFFFAF8FF)
+val onSurface = Color(0xFF181B24)
+val surfaceVariant = Color(0xFFDEE2F4)
+val onSurfaceVariant = Color(0xFF414655)
+val outline = Color(0xFF727787)
+val outlineVariant = Color(0xFFC1C6D8)
+val scrim = Color(0xFF000000)
+val inverseSurface = Color(0xFF2D3039)
+val inverseOnSurface = Color(0xFFEFF0FC)
+val inversePrimary = Color(0xFFAFC6FF)
+val surfaceDim = Color(0xFFD8D9E5)
+val surfaceBright = Color(0xFFFAF8FF)
+val surfaceContainerLowest = Color(0xFFFFFFFF)
+val surfaceContainerLow = Color(0xFFF2F3FF)
+val surfaceContainer = Color(0xFFECEDF9)
+val surfaceContainerHigh = Color(0xFFE6E7F3)
+val surfaceContainerHighest = Color(0xFFE0E2EE)
+

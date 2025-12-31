@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<resources>
+    <string name="ags4_name">Agri</string>
+    <string name="ags4_name_bro">BRO</string>
+    <string name="ags4_name_mirair">V9 AG</string>
+    <string name="ags4_name_sv">SV</string>
+    <string name="ags4_name_demeter">DEMETER V2</string>
+    <string name="ags4_name_joyance">Joyance</string>
+    <string name="ags4_name_dmo">DMO AG</string>
+    <string name="ags4_name_jiusi">JIUSI</string>
+    <string name="ags4_name_hyperindia">Agri</string>
+    <string name="ags4_name_dronejai">Drone Jai</string>
+    <string name="ags4_name_hope">HOPE</string>
+    <string name="ags4_name_syfero">Agri</string>
+    <string name="ags4_name_astrox">Agri</string>
+    <string name="ags4_name_nac">EASY-2018</string>
+    <string name="ags4_name_imep">IMEP</string>
+</resources>

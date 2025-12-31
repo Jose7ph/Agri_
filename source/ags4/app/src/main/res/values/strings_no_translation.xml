@@ -1,0 +1,33 @@
+<resources>
+    <string name="na" translatable="false">N/A</string>
+    <string name="estimated_area" translatable="false">%1$s %2$s</string>
+    <string name="in_place_sensor_m1" translatable="false">M1</string>
+    <string name="in_place_sensor_m2" translatable="false">M2</string>
+    <string name="in_place_sensor_m3" translatable="false">M3</string>
+    <string name="in_place_sensor_m4" translatable="false">M4</string>
+    <string name="rocker_left" translatable="false">L</string>
+    <string name="rocker_right" translatable="false">R</string>
+    <string name="electric_dispatch_type_hw" translatable="false">HW</string>
+    <string name="electric_dispatch_type_th" translatable="false">TH</string>
+    <string name="device_weight_k1" translatable="false">K1</string>
+    <string name="device_weight_k2" translatable="false">K2</string>
+    <string name="device_weight_k3" translatable="false">K3</string>
+    <string name="device_weight_k4" translatable="false">K4</string>
+
+    <string name="distance" translatable="false">%1$sm</string>
+    <string name="distance3" translatable="false">%1$s</string>
+    <string name="device_management_gnss" translatable="false">GNSS</string>
+    <string name="device_remote_id" translatable="false">Remote Id</string>
+    <string name="device_uas_id" translatable="false">UAS Id</string>
+    <string name="device_self_id" translatable="false">Self Id</string>
+    <string name="device_operator_id" translatable="false">Operator Id</string>
+    <string name="device_arm_status" translatable="false">ARM STATUS</string>
+    <string name="device_rid_comms" translatable="false">RID COMMS</string>
+    <string name="device_gcp_gps" translatable="false">GCS GPS</string>
+    <string name="device_basic_id" translatable="false">BASIC ID</string>
+    <string name="device_emergency" translatable="false">EMERGENCY</string>
+    <string name="device_emergency_tips" translatable="false">Press and Hold below button to declare emergency</string>
+    <string name="device_rtk" translatable="false">RTK</string>
+    <string name="device_line_pump" translatable="false">Line Pump</string>
+    <string name="show_analysis" translatable="false">Show Analysis</string>
+</resources>

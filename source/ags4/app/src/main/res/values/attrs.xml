@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 圆形头像 -->
+    <declare-styleable name="VideoFrame">
+        <attr name="video_index" format="integer"/>
+    </declare-styleable>
+
+</resources>

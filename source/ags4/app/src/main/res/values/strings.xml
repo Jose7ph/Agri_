@@ -926,4 +926,9 @@
     <string name="interference_value">Interference Value</string>
     <string name="param_pid_brake">Brake Coeff.</string>
     <string name="move_route">Move route</string>
+
+
+    <string name="device_management_new_card">new card</string>
+
+
 </resources>

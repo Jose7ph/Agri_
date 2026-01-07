@@ -86,6 +86,9 @@ class DeviceManagementActivity : BaseComponentActivity() {
                     composable("device_rtk") { DeviceRTK() }
                     composable("device_camera_gimbal") { DeviceCameraGimbal() }
                     composable("device_locator") { DeviceLocator() }
+                    composable("device_new_card_demo") {
+                        DeviceNewCardDemoScreen()
+                    }
                 }
             }
         }

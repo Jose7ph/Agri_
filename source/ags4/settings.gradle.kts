@@ -21,6 +21,7 @@ dependencyResolutionManagement {
         maven { url = uri("https://maven.aliyun.com/repository/public") }
         maven { url = uri("https://jitpack.io") }
         maven { url = uri("https://repository.map.naver.com/archive/maven") }
+
         // Mapbox Maven repository
 //        maven {
 //            url = uri("https://api.mapbox.com/downloads/v2/releases/maven")
@@ -38,3 +39,5 @@ include(":app")
 //include(":v9sdk")
 //project(":v9sdk").projectDir = File("../v9sdk/v9sdk")
 
+include(":grpc-proto")
+include(":grpc-server")

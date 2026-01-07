@@ -1,5 +1,6 @@
 package com.jiagu.ags4.scene.device
 
+
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -26,6 +27,9 @@ import com.jiagu.jgcompose.container.MainContent
 import com.jiagu.jgcompose.ext.hideDialog
 import com.jiagu.jgcompose.ext.showDialog
 import com.jiagu.jgcompose.popup.PromptPopup
+import androidx.compose.material3.Button
+import androidx.compose.material3.Text
+
 
 @Composable
 fun DeviceGNSS() {
@@ -36,6 +40,8 @@ fun DeviceGNSS() {
     val progress by progressModel.progress.observeAsState()
     val gnssList =
         filterDeviceByTypes(idListData = deviceList, filterNum = listOf(VKAgCmd.DEVINFO_GNSS))
+
+
 
     when (progress) {
         is ProgressModel.ProgressMessage -> {

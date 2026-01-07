@@ -1034,8 +1034,20 @@ fun defaultDeviceCard(
 //                DeviceCardContent(
 //                    title = stringResource(id = R.string.swinging_speed), value = swingingSpeedValue
 //                )
-//            })
-    )
+//            }),
+        DeviceCardInfo(
+            deviceCardType = -999, // just a unique int for demo/testing
+            deviceType = R.string.device_management_new_card,
+            // temporary title source if you don’t want a new string resource
+            deviceImage = R.drawable.default_device_gnss, // use any existing icon for now
+            target = CardTargetEnum.NEW_CARD_DEMO.target,
+            content = {
+                DeviceCardContent(title = "Mode:", value = "RPC / BLE")
+                DeviceCardContent(title = "Status:", value = "Demo")
+            }
+        ),
+
+        )
     //remote id todo idList 没有 使用这里 但是需要添加条件
 //    if (BuildConfig.REMOTE_ID) {
 //        list.add(
@@ -1187,7 +1199,9 @@ enum class CardTargetEnum(val target: String) {
     REMOTE_ID("device_remote_id"),
     RTK("device_rtk"),
     LINE_PUMP("device_line_pump"),
-    LOCATOR("device_locator")
+    LOCATOR("device_locator"),
+
+    NEW_CARD_DEMO("device_new_card_demo")
 }
 
 /**

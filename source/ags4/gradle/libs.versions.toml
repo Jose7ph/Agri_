@@ -35,6 +35,7 @@ mapbox = "10.16.0"
 googlemap = "18.2.0"
 androidx-lifecycle = "2.6.2"
 kotlinx-coroutines = "1.7.3"
+jetbrainsKotlinJvm = "1.9.23"
 
 [libraries]
 accompanist-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanistSystemuicontroller" }
@@ -84,3 +85,4 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 googleKsp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 googleAndroidMapsPlugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "gmaps" }
+jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }

@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+package com.example.drone;
+
+option java_multiple_files = true;
+option java_package = "com.example.drone";
+option java_outer_classname = "TelemetryProto";
+
+service TelemetryService {
+    rpc subscribePosition(SubscribePositionRequest) returns (stream PositionResponse);
+    rpc subscribeAltitude(SubscribeAltitudeRequest) returns (stream AltitudeResponse);
+    rpc subscribeInAir(SubscribeInAirRequest) returns (stream InAirResponse);
+    rpc subscribeAttitudeEuler(SubscribeAttitudeEulerRequest) returns (stream AttitudeEulerResponse);
+}
+
+message SubscribePositionRequest {}
+
+message Position {
+    double latitudeDeg = 1;
+    double longitudeDeg = 2;
+    float absoluteAltitudeM = 3;
+    float relativeAltitudeM = 4;
+}
+
+message PositionResponse {
+    Position position = 1;
+}
+
+message SubscribeAltitudeRequest {}
+
+message Altitude {
+    float altitudeAmslM = 1;
+}
+
+message AltitudeResponse {
+    Altitude altitude = 1;
+}
+
+message SubscribeInAirRequest {}
+
+message InAirResponse {
+    bool isInAir = 1;
+}
+
+message SubscribeAttitudeEulerRequest {}
+
+message AttitudeEulerResponse {
+    float rollDeg = 1;
+    float pitchDeg = 2;
+    float yawDeg = 3;
+    int64 timeStampsUs = 4;
+}

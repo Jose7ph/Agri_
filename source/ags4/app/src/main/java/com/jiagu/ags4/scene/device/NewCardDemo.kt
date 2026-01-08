@@ -22,10 +22,38 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.jiagu.ags4.utils.LocalNavController
 import com.jiagu.jgcompose.container.MainContent
+import android.widget.Toast
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.runtime.*
+import androidx.compose.ui.platform.LocalContext
+import com.jiagu.ags4.ihattys.ble.IhattysBleManager
+import com.jiagu.ags4.ihattys.ble.IhattysBlePermissions
+
 
 @Composable
 fun DeviceNewCardDemoScreen() {
     val navController = LocalNavController.current
+    val context = LocalContext.current
+
+    var bleRunning by remember { mutableStateOf(IhattysBleManager.isRunning(context)) }
+
+    val permissionLauncher = rememberLauncherForActivityResult(
+        ActivityResultContracts.RequestMultiplePermissions()
+    ) { result ->
+        val ok = result.values.all { it }
+        if (ok) {
+            val newState = IhattysBleManager.toggle(context)
+            bleRunning = newState
+            Toast.makeText(
+                context,
+                if (newState) "IHATTYS BLE started broadcasting" else "IHATTYS BLE stopped",
+                Toast.LENGTH_SHORT
+            ).show()
+        } else {
+            Toast.makeText(context, "BLE permissions denied", Toast.LENGTH_SHORT).show()
+        }
+    }
 
     MainContent(
         title = "new card demo",
@@ -42,12 +70,26 @@ fun DeviceNewCardDemoScreen() {
                     // TODO: put your gRPC logic here
                 },
                 onBle = {
-                    // TODO: put your BLE logic here
+                    // ✅ Press once: start, press again: stop
+                    if (!IhattysBlePermissions.hasAll(context)) {
+                        permissionLauncher.launch(IhattysBlePermissions.required())
+                        return@NewCardDemoCard
+                    }
+
+                    val newState = IhattysBleManager.toggle(context)
+                    bleRunning = newState
+
+                    Toast.makeText(
+                        context,
+                        if (newState) "IHATTYS BLE started broadcasting" else "IHATTYS BLE stopped",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             )
         }
     }
 }
+
 
 @Composable
 fun NewCardDemoCard(

@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package com.example.drone;
+
+option java_multiple_files = true;
+option java_package = "com.example.drone";
+option java_outer_classname = "InfoProto";
+
+service InfoService {
+    rpc getProduct(GetProductRequest) returns (GetProductResponse);
+    rpc getIdentification(GetProductRequest) returns (IdentificationResponse);
+}
+
+message InfoResult {
+    enum Result {
+        RESULT_UNKNOWN = 0;
+        RESULT_SUCCESS = 1;
+        RESULT_INFORMATION_NOT_RECEIVED_YET = 2;
+        RESULT_NO_SYSTEM = 3;
+    }
+    Result result = 1;
+    string result_str = 2;
+}
+
+message Product {
+    int32 vendor_id = 1;
+    string vendor_name = 2;
+    int32 product_id = 3;
+    string product_name = 4;
+}
+
+message GetProductRequest {}
+
+message GetProductResponse {
+    InfoResult result = 1;
+    Product product = 2;
+}
+
+message IdentificationResponse {
+    InfoResult result = 1;
+    string hardware_uid = 2;
+    uint64 legacy_uid = 3;
+}

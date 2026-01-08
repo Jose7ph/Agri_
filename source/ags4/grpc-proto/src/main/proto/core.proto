@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package com.example.drone;
+
+option java_multiple_files = true;
+option java_package = "com.example.drone";
+option java_outer_classname = "CoreProto";
+
+service CoreService {
+    rpc subscribeConnectionState(SubscribeConnectionStateRequest)
+            returns (stream ConnectionStateResponse);
+}
+
+message SubscribeConnectionStateRequest {}
+
+message ConnectionStateResponse {
+    bool isConnected = 1;
+}

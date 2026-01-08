@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package com.example.drone;
+
+option java_multiple_files = true;
+option java_package = "com.example.drone";
+option java_outer_classname = "ActionProto";
+
+service ActionService {
+    rpc hold(HoldRequest) returns (HoldResponse);
+}
+
+enum Result {
+    RESULT_SUCCESS = 0;
+    RESULT_FAILED = 1;
+    RESULT_COMMAND_DENIED = 2;
+    RESULT_TIMEOUT = 3;
+}
+
+message HoldRequest {}
+
+message ActionResult {
+    Result result = 1;
+    string resultStr = 2;
+}
+
+message HoldResponse {
+    ActionResult actionResult = 1;
+}

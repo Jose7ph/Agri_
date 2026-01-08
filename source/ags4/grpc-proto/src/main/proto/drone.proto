@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_package = "com.example.drone";
+option java_multiple_files = true;
+
+package drone;
+
+service DroneService {
+    rpc StreamDrones(DroneRequest) returns (stream DroneInfo);
+}
+
+message DroneRequest {
+    string client_id = 1;
+}
+
+message DroneInfo {
+    string id = 1;
+    string name = 2;
+}

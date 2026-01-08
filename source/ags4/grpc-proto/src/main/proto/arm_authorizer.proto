@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package com.example.drone;
+
+option java_multiple_files = true;
+option java_package = "com.example.drone";
+option java_outer_classname = "ArmAuthorizerProto";
+
+service ArmAuthorizerServerService{
+    rpc subscribeArmAuthorization(SubscribeArmAuthorizationRequest)
+            returns (ArmAuthorizationResponse);
+
+    rpc rejectArmAuthorization(RejectArmAuthorizationRequest)
+            returns (RejectArmAuthorizationResponse);
+
+    rpc acceptArmAuthorization(AcceptArmAuthorizationRequest)
+            returns (ArmAuthorizerServerResult);
+}
+
+message SubscribeArmAuthorizationRequest {}
+
+message ArmAuthorizationResponse {
+    int32 systemid = 1;
+}
+
+message RejectArmAuthorizationRequest {
+    bool temporarily = 1;
+    int32 reason = 2;
+    int32 extraInfo = 3;
+}
+
+message ArmAuthorizerServerResult {
+    enum Result {
+        RESULT_UNKNOWN = 0;
+        RESULT_SUCCESS = 1;
+        RESULT_FAILED  = 2;
+    }
+    Result result = 1;
+    string result_str = 2;
+}
+
+message RejectArmAuthorizationResponse {
+    ArmAuthorizerServerResult result = 1;
+}
+
+message AcceptArmAuthorizationRequest {
+    int32 valid_time_s = 1;
+    int32 reason = 2;
+    int32 extraInfo = 3;
+}
